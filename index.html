@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vidly</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+
+
+<body ng-app="vidly">
+    
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand">Vidly</div>
+        </div>
+    </div>
+</nav>
+    
+    
+<div class="container">
+    <div ng-include="'app/customers/customerListView.html'"></div>
+</div>
+
+
+<!--Library Scripts-->
+   <script src="Scripts/underscore.js"></script>
+    <script src="Scripts/underscore.min.js"></script>
+  <script src="Scripts/jquery-1.9.0.js"></script>
+    
+   
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/angular-resource.js"></script>
+
+    
+
+    <!--Application Script-->
+    <script src="app/app.js"></script>
+    <script src="common/common.services.js"></script>
+    <script src="common/customerResource.js"></script>
+
+    <!--Product Controllers-->
+    
+    <script src="app/customers/customerListCtrl.js"></script>
+    <script src="common/memberShipTypeResource.js"></script>
+
+</body>
+</html>
